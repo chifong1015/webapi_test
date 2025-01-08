@@ -1,9 +1,7 @@
 from filefc import Test
-from doc import Doc
 import pytest
 
 test = Test()
-doc = Doc()
 #測試報告檔案名稱
 file_name = 'Web API取得模組的啟用狀態、回報、輪詢時間'
 #測試報告裝置名稱
@@ -88,5 +86,3 @@ def test_post(post_data):
     rs,rq = test.post_test(post_data[2])
     report_array.append((post_data[0],post_data[1],rs,step,'put',base_url,post_data[2],rq,rq))
 
-def test_report():
-    assert doc.report_word(file_name,dev_name,report_array) == True 

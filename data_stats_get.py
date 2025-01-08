@@ -1,9 +1,7 @@
 from filefc import Test
-from doc import Doc
 import pytest
 
 test = Test()
-doc = Doc()
 #測試報告檔案名稱
 file_name = 'Web-GUI統計資料API調整報告'
 #測試報告裝置名稱
@@ -52,7 +50,3 @@ test.init(base_url,format)
 def test_get(data):
     rs,rq = test.get_test(data[2])
     report_array.append((data[0],data[1],rs,step,'get',base_url,data[2],rq,rq))
-
-# def test_report():
-#     assert doc.report_word(file_name,dev_name,report_array) == True 
-##123
