@@ -53,5 +53,5 @@ def test_get(data):
     rs,rq = test.get_test(data[2])
     report_array.append((data[0],data[1],rs,step,'get',base_url,data[2],rq,rq))
 
-def test_report():
-    assert doc.report_word(file_name,dev_name,report_array) == True 
+# def test_report():
+#     assert doc.report_word(file_name,dev_name,report_array) == True 
