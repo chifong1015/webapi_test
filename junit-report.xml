@@ -1,18 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
-<testsuites>
-    <testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.670" timestamp="2025-01-17T17:14:48.628997" hostname="NB-XCV17E418446">
-        <testcase classname="data_stats_get" auto_test_id="1" name="test_sum_two_numbers" time="0.001" />
-        <testcase classname="data_stats_get" auto_test_id="2" name="test_sum_two_decimals" time="0.002">
-            <properties><property name="testrail_attachment" value="sample_reports/testrail.jpg" />
-            </properties><failure message="assert (0.8 + 0.3) == 1.2">record_property = &lt;function record_property.&lt;locals&gt;.append_property at 0x000002EB040A8540&gt;
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="4" time="0.200" timestamp="2025-01-21T17:01:15.770508" hostname="NB-XCV17E418446"><testcase classname="test" name="test_sum_two_numbers" time="0.001" /><testcase classname="test" name="test_sum_two_decimals" time="0.003"><properties><property name="testrail_attachment" value="sample_reports/testrail.jpg" /></properties><failure message="assert (0.8 + 0.3) == 1.2">record_property = &lt;function record_property.&lt;locals&gt;.append_property at 0x0000022E10D74540&gt;
 
     def test_sum_two_decimals(record_property):
         record_property("testrail_attachment", "sample_reports/testrail.jpg")
 &gt;       assert 0.8 + 0.3 == 1.2
 E       assert (0.8 + 0.3) == 1.2
 
-data_stats_get.py:8: AssertionError</failure>
-</testcase
-><testcase classname="data_stats_get" name="test_sum_multiple_numbers[3+5-8]" auto_test_id="3" time="0.001" />
-<testcase classname="data_stats_get" name="test_sum_multiple_numbers[2+4-6]" auto_test_id="4" time="0.001" />
-</testsuite></testsuites>
+test.py:8: AssertionError</failure></testcase><testcase classname="test" name="test_sum_multiple_numbers[3+5-8]" time="0.001" /><testcase classname="test" name="test_sum_multiple_numbers[2+4-6]" time="0.001" /></testsuite></testsuites>
