@@ -35,7 +35,6 @@ headers = {
     "Authorization": f"Basic {auth_header}"
 }
 get = requests.get("https://chifong0123456.testrail.io/index.php?/api/v2/get_cases/4",headers=headers).json()
-print(get)
 # data = {
 #     "name": "New Section Name",
 #     "description": "Optional description for this section",    
